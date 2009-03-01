@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		B01FE0150F5B268D00203648 /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B01FE0260F5B26C900203648 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				B01FE0190F5B269800203648 /* PBXTargetDependency */,
+				B01FE01B0F5B269A00203648 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		B01FE0290F5B26EB00203648 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01FE0270F5B26EB00203648 /* ShortcutRecorder.framework */; };
+		B01FE0350F5B26EE00203648 /* ShortcutRecorder.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = B01FE0270F5B26EB00203648 /* ShortcutRecorder.framework */; };
+		B01FE0370F5B26F400203648 /* SDGlobalShortcuts.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* SDGlobalShortcuts.framework */; };
+		B01FE0430F5B280D00203648 /* PTHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = B01FE03A0F5B280D00203648 /* PTHotKey.m */; };
+		B01FE0460F5B280D00203648 /* PTKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = B01FE03D0F5B280D00203648 /* PTKeyCombo.m */; };
+		B01FE0470F5B280D00203648 /* SDGlobalShortcutsController.h in Headers */ = {isa = PBXBuildFile; fileRef = B01FE03E0F5B280D00203648 /* SDGlobalShortcutsController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B01FE0480F5B280D00203648 /* SDGlobalShortcutsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01FE03F0F5B280D00203648 /* SDGlobalShortcutsController.m */; };
+		B01FE0490F5B280D00203648 /* SDGlobalShortcuts.h in Headers */ = {isa = PBXBuildFile; fileRef = B01FE0400F5B280D00203648 /* SDGlobalShortcuts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B01FE04A0F5B280D00203648 /* PTHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B01FE0410F5B280D00203648 /* PTHotKeyCenter.m */; };
+		B01FE04D0F5B283500203648 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B01FE04C0F5B283500203648 /* main.m */; };
+		B01FE04F0F5B288B00203648 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01FE04E0F5B288B00203648 /* MainMenu.xib */; };
+		B01FE0530F5B294F00203648 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B01FE0520F5B294F00203648 /* AppDelegate.m */; };
+		B01FE06D0F5B2A7B00203648 /* SDGlobalShortcuts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* SDGlobalShortcuts.framework */; };
+		B01FE07E0F5B2ABB00203648 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01FE07D0F5B2ABB00203648 /* Carbon.framework */; };
+		B01FE09A0F5B2B0F00203648 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		B01FE1E80F5B2B2300203648 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D6A5FE840307C02AAC07 /* AppKit.framework */; };
+		B01FE1E90F5B2B2300203648 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F7E79907B2D74100F64583 /* CoreData.framework */; };
+		B01FE1EA0F5B2B2300203648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B01FE0180F5B269800203648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = SDGlobalHotKeys;
+		};
+		B01FE01A0F5B269A00203648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B01FE0080F5B263F00203648;
+			remoteInfo = ExampleApp;
+		};
+		B01FE01C0F5B26A600203648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = SDGlobalHotKeys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B01FE0250F5B26C900203648 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B01FE0370F5B26F400203648 /* SDGlobalShortcuts.framework in Copy Frameworks */,
+				B01FE0350F5B26EE00203648 /* ShortcutRecorder.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* SDGlobalShortcuts_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDGlobalShortcuts_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* SDGlobalShortcuts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDGlobalShortcuts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01FE0090F5B263F00203648 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01FE00B0F5B263F00203648 /* ExampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleApp-Info.plist"; sourceTree = "<group>"; };
+		B01FE0270F5B26EB00203648 /* ShortcutRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShortcutRecorder.framework; path = Frameworks/ShortcutRecorder.framework; sourceTree = "<group>"; };
+		B01FE0390F5B280D00203648 /* PTHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTHotKey.h; path = Source/PTHotKey.h; sourceTree = "<group>"; };
+		B01FE03A0F5B280D00203648 /* PTHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTHotKey.m; path = Source/PTHotKey.m; sourceTree = "<group>"; };
+		B01FE03B0F5B280D00203648 /* PTHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTHotKeyCenter.h; path = Source/PTHotKeyCenter.h; sourceTree = "<group>"; };
+		B01FE03C0F5B280D00203648 /* PTKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTKeyCombo.h; path = Source/PTKeyCombo.h; sourceTree = "<group>"; };
+		B01FE03D0F5B280D00203648 /* PTKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTKeyCombo.m; path = Source/PTKeyCombo.m; sourceTree = "<group>"; };
+		B01FE03E0F5B280D00203648 /* SDGlobalShortcutsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDGlobalShortcutsController.h; path = Source/SDGlobalShortcutsController.h; sourceTree = "<group>"; };
+		B01FE03F0F5B280D00203648 /* SDGlobalShortcutsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDGlobalShortcutsController.m; path = Source/SDGlobalShortcutsController.m; sourceTree = "<group>"; };
+		B01FE0400F5B280D00203648 /* SDGlobalShortcuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDGlobalShortcuts.h; path = Source/SDGlobalShortcuts.h; sourceTree = "<group>"; };
+		B01FE0410F5B280D00203648 /* PTHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTHotKeyCenter.m; path = Source/PTHotKeyCenter.m; sourceTree = "<group>"; };
+		B01FE04C0F5B283500203648 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SampleCode/main.m; sourceTree = "<group>"; };
+		B01FE04E0F5B288B00203648 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = SampleCode/MainMenu.xib; sourceTree = "<group>"; };
+		B01FE0510F5B294F00203648 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SampleCode/AppDelegate.h; sourceTree = "<group>"; };
+		B01FE0520F5B294F00203648 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SampleCode/AppDelegate.m; sourceTree = "<group>"; };
+		B01FE07D0F5B2ABB00203648 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				B01FE07E0F5B2ABB00203648 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B01FE0070F5B263F00203648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01FE1E80F5B2B2300203648 /* AppKit.framework in Frameworks */,
+				B01FE1E90F5B2B2300203648 /* CoreData.framework in Frameworks */,
+				B01FE1EA0F5B2B2300203648 /* Foundation.framework in Frameworks */,
+				B01FE09A0F5B2B0F00203648 /* Cocoa.framework in Frameworks */,
+				B01FE06D0F5B2A7B00203648 /* SDGlobalShortcuts.framework in Frameworks */,
+				B01FE0290F5B26EB00203648 /* ShortcutRecorder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* SDGlobalShortcuts.framework */,
+				B01FE0090F5B263F00203648 /* ExampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* SDGlobalHotKeys */ = {
+			isa = PBXGroup;
+			children = (
+				B01FE0120F5B264700203648 /* Framework */,
+				B01FE0130F5B265900203648 /* ExampleApp */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = SDGlobalHotKeys;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B01FE0400F5B280D00203648 /* SDGlobalShortcuts.h */,
+				B01FE03E0F5B280D00203648 /* SDGlobalShortcutsController.h */,
+				B01FE03F0F5B280D00203648 /* SDGlobalShortcutsController.m */,
+				B01FE03B0F5B280D00203648 /* PTHotKeyCenter.h */,
+				B01FE0410F5B280D00203648 /* PTHotKeyCenter.m */,
+				B01FE0390F5B280D00203648 /* PTHotKey.h */,
+				B01FE03A0F5B280D00203648 /* PTHotKey.m */,
+				B01FE03C0F5B280D00203648 /* PTKeyCombo.h */,
+				B01FE03D0F5B280D00203648 /* PTKeyCombo.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B01FE07D0F5B2ABB00203648 /* Carbon.framework */,
+				B01FE0270F5B26EB00203648 /* ShortcutRecorder.framework */,
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* SDGlobalShortcuts_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		B01FE0120F5B264700203648 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		B01FE0130F5B265900203648 /* ExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				B01FE00B0F5B263F00203648 /* ExampleApp-Info.plist */,
+				B01FE04C0F5B283500203648 /* main.m */,
+				B01FE04E0F5B288B00203648 /* MainMenu.xib */,
+				B01FE0510F5B294F00203648 /* AppDelegate.h */,
+				B01FE0520F5B294F00203648 /* AppDelegate.m */,
+			);
+			name = ExampleApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01FE0470F5B280D00203648 /* SDGlobalShortcutsController.h in Headers */,
+				B01FE0490F5B280D00203648 /* SDGlobalShortcuts.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* SDGlobalShortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "SDGlobalShortcuts" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDGlobalShortcuts;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = SDGlobalHotKeys;
+			productReference = 8DC2EF5B0486A6940098B216 /* SDGlobalShortcuts.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B01FE0080F5B263F00203648 /* ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B01FE00E0F5B264000203648 /* Build configuration list for PBXNativeTarget "ExampleApp" */;
+			buildPhases = (
+				B01FE0050F5B263F00203648 /* Resources */,
+				B01FE0060F5B263F00203648 /* Sources */,
+				B01FE0070F5B263F00203648 /* Frameworks */,
+				B01FE0250F5B26C900203648 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B01FE01D0F5B26A600203648 /* PBXTargetDependency */,
+			);
+			name = ExampleApp;
+			productName = ExampleApp;
+			productReference = B01FE0090F5B263F00203648 /* ExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "SDGlobalShortcuts" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* SDGlobalHotKeys */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* SDGlobalShortcuts */,
+				B01FE0080F5B263F00203648 /* ExampleApp */,
+				B01FE0150F5B268D00203648 /* All */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B01FE0050F5B263F00203648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01FE04F0F5B288B00203648 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01FE0430F5B280D00203648 /* PTHotKey.m in Sources */,
+				B01FE0460F5B280D00203648 /* PTKeyCombo.m in Sources */,
+				B01FE0480F5B280D00203648 /* SDGlobalShortcutsController.m in Sources */,
+				B01FE04A0F5B280D00203648 /* PTHotKeyCenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B01FE0060F5B263F00203648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01FE04D0F5B283500203648 /* main.m in Sources */,
+				B01FE0530F5B294F00203648 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B01FE0190F5B269800203648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* SDGlobalShortcuts */;
+			targetProxy = B01FE0180F5B269800203648 /* PBXContainerItemProxy */;
+		};
+		B01FE01B0F5B269A00203648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B01FE0080F5B263F00203648 /* ExampleApp */;
+			targetProxy = B01FE01A0F5B269A00203648 /* PBXContainerItemProxy */;
+		};
+		B01FE01D0F5B26A600203648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* SDGlobalShortcuts */;
+			targetProxy = B01FE01C0F5B26A600203648 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SDGlobalShortcuts_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				PRODUCT_NAME = SDGlobalShortcuts;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SDGlobalShortcuts_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				PRODUCT_NAME = SDGlobalShortcuts;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		B01FE00C0F5B263F00203648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "ExampleApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ExampleApp;
+			};
+			name = Debug;
+		};
+		B01FE00D0F5B263F00203648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "ExampleApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ExampleApp;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		B01FE0160F5B268D00203648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = All;
+			};
+			name = Debug;
+		};
+		B01FE0170F5B268D00203648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = All;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "SDGlobalShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "SDGlobalShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B01FE00E0F5B264000203648 /* Build configuration list for PBXNativeTarget "ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01FE00C0F5B263F00203648 /* Debug */,
+				B01FE00D0F5B263F00203648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B01FE0260F5B26C900203648 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01FE0160F5B268D00203648 /* Debug */,
+				B01FE0170F5B268D00203648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
