@@ -46,13 +46,66 @@ static SDGlobalShortcutsController *sharedShortcutsController = nil;
 	[self addShortcutFromDefaultsKey:defaultsKey withControl:nil target:target selector:action];
 }
 
+- (void) addShortcutFromDefaultsKey:(NSString*)defaultsKey target:(id)target selectorForUpOnly:(SEL)action {
+	[self addShortcutFromDefaultsKey:defaultsKey withControl:nil target:target selectorForUpOnly:action];
+}
+
+- (void) addShortcutFromDefaultsKey:(NSString*)defaultsKey target:(id)target selectorForDown:(SEL)downAction andUp:(SEL)upAction {
+	[self addShortcutFromDefaultsKey:defaultsKey withControl:nil target:target selectorForDown:downAction andUp:upAction];
+}
+
 - (void) addShortcutFromDefaultsKey:(NSString*)defaultsKey withControl:(SRRecorderControl*)recorderControl target:(id)target selector:(SEL)action {
 	NSDictionary *dict = [SDDefaults dictionaryForKey:defaultsKey];
 	PTKeyCombo *keyCombo = [[[PTKeyCombo alloc] initWithPlistRepresentation:dict] autorelease];
 	
 	PTHotKey *hotKey = hotKey = [[[PTHotKey alloc] initWithIdentifier:defaultsKey keyCombo:keyCombo] autorelease];
 	[hotKey setTarget:target];
-	[hotKey setAction:action];
+	[hotKey setActionDown:action];
+	
+	[[PTHotKeyCenter sharedCenter] registerHotKey:hotKey];
+	
+	NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+	[dictionary setObject:hotKey forKey:kSDHotKeyKey];
+	[dictionary setObject:defaultsKey forKey:kSDDefaultsKeyKey];
+	
+	if (recorderControl) {
+		[self setKeyCombo:keyCombo forRecorderControl:recorderControl];
+		[dictionary setObject:recorderControl forKey:kSDRecorderControlKey];
+	}
+	
+	[storedHotKeys addObject:dictionary];
+}
+
+- (void) addShortcutFromDefaultsKey:(NSString*)defaultsKey withControl:(SRRecorderControl*)recorderControl target:(id)target selectorForUpOnly:(SEL)action {
+	NSDictionary *dict = [SDDefaults dictionaryForKey:defaultsKey];
+	PTKeyCombo *keyCombo = [[[PTKeyCombo alloc] initWithPlistRepresentation:dict] autorelease];
+	
+	PTHotKey *hotKey = hotKey = [[[PTHotKey alloc] initWithIdentifier:defaultsKey keyCombo:keyCombo] autorelease];
+	[hotKey setTarget:target];
+	[hotKey setActionUp:action];
+	
+	[[PTHotKeyCenter sharedCenter] registerHotKey:hotKey];
+	
+	NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
+	[dictionary setObject:hotKey forKey:kSDHotKeyKey];
+	[dictionary setObject:defaultsKey forKey:kSDDefaultsKeyKey];
+	
+	if (recorderControl) {
+		[self setKeyCombo:keyCombo forRecorderControl:recorderControl];
+		[dictionary setObject:recorderControl forKey:kSDRecorderControlKey];
+	}
+	
+	[storedHotKeys addObject:dictionary];
+}
+
+- (void) addShortcutFromDefaultsKey:(NSString*)defaultsKey withControl:(SRRecorderControl*)recorderControl target:(id)target selectorForDown:(SEL)downAction andUp:(SEL)upAction {
+	NSDictionary *dict = [SDDefaults dictionaryForKey:defaultsKey];
+	PTKeyCombo *keyCombo = [[[PTKeyCombo alloc] initWithPlistRepresentation:dict] autorelease];
+	
+	PTHotKey *hotKey = hotKey = [[[PTHotKey alloc] initWithIdentifier:defaultsKey keyCombo:keyCombo] autorelease];
+	[hotKey setTarget:target];
+	[hotKey setActionDown:downAction];
+	[hotKey setActionUp:upAction];
 	
 	[[PTHotKeyCenter sharedCenter] registerHotKey:hotKey];
 	

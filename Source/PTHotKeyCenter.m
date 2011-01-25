@@ -159,10 +159,11 @@ static id _sharedHotKeyCenter = nil;
 }
 
 - (void)_hotKeyDown: (PTHotKey*)hotKey {
-	[hotKey invoke];
+	[hotKey invokeDown];
 }
 
 - (void)_hotKeyUp: (PTHotKey*)hotKey {
+	[hotKey invokeUp];
 }
 
 - (void)sendEvent: (NSEvent*)event {

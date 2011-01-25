@@ -22,6 +22,7 @@
 // Use when attacging a hotkey to a user-defaults key, control, target, and selector.
 // The user-defaults key is used for automatic persistence, and is used internally
 // as a unique identifier for your shortcut control and global hot key.
+// Triggers on KeyDown only (this is the default).
 - (void) addShortcutFromDefaultsKey:(NSString*)defaultsKey
 						withControl:(SRRecorderControl*)recorderControl
 							 target:(id)target
@@ -35,6 +36,44 @@
 - (void) addShortcutFromDefaultsKey:(NSString*)defaultsKey
 							 target:(id)target
 						   selector:(SEL)action;
+
+// Use when attacging a hotkey to a user-defaults key, control, target, and selector.
+// The user-defaults key is used for automatic persistence, and is used internally
+// as a unique identifier for your shortcut control and global hot key.
+// Triggers on KeyUp only.
+- (void) addShortcutFromDefaultsKey:(NSString*)defaultsKey
+						withControl:(SRRecorderControl*)recorderControl
+							 target:(id)target
+				  selectorForUpOnly:(SEL)action;
+
+// This method does the same as the one above, except it sends nil for the argument
+// "recorderControl". This technique is useful if you want to load a global shortcut
+// earlier than the control is displayed (for example, in your preference panel).
+// Simply load add the shortcut in your App Delegate, for instance, and attach later
+// to the defaults key in your Preferences Controller.
+- (void) addShortcutFromDefaultsKey:(NSString*)defaultsKey
+							 target:(id)target
+				  selectorForUpOnly:(SEL)action;
+
+// Use when attacging a hotkey to a user-defaults key, control, target, and selector.
+// The user-defaults key is used for automatic persistence, and is used internally
+// as a unique identifier for your shortcut control and global hot key.
+// Triggers for KeyUp and KeyDown with distinct actions for each.
+- (void) addShortcutFromDefaultsKey:(NSString*)defaultsKey
+						withControl:(SRRecorderControl*)recorderControl
+							 target:(id)target
+					selectorForDown:(SEL)downAction
+							  andUp:(SEL)upAction;
+
+// This method does the same as the one above, except it sends nil for the argument
+// "recorderControl". This technique is useful if you want to load a global shortcut
+// earlier than the control is displayed (for example, in your preference panel).
+// Simply load add the shortcut in your App Delegate, for instance, and attach later
+// to the defaults key in your Preferences Controller.
+- (void) addShortcutFromDefaultsKey:(NSString*)defaultsKey
+							 target:(id)target
+					selectorForDown:(SEL)downAction
+							  andUp:(SEL)upAction;
 
 // Use this method to attach a shortcut control to the global shortcut, via the user-
 // defaults key, as described in the above method.

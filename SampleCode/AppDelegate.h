@@ -17,5 +17,6 @@
 }
 
 - (IBAction) doSomething:(id)sender;
+- (IBAction) doSomethingElse:(id)sender;
 
 @end

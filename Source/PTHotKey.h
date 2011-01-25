@@ -14,18 +14,21 @@
 	NSString*		name;
 	PTKeyCombo*		keyCombo;
 	id				target;
-	SEL				action;
+	SEL				actionDown;
+	SEL				actionUp;
 }
 
 @property (assign) id target;
 @property (retain) NSString* name;
 @property (retain) id identifier;
 @property (retain) PTKeyCombo *keyCombo;
-@property SEL action;
+@property SEL actionDown;
+@property SEL actionUp;
 
 - (id)initWithIdentifier:(id)newIdentifier keyCombo:(PTKeyCombo*)combo;
 - (id)init;
 
-- (void)invoke;
+- (void)invokeDown;
+- (void)invokeUp;
 
 @end

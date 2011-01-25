@@ -13,7 +13,7 @@
 
 @implementation PTHotKey
 
-@synthesize identifier, action, name, target;
+@synthesize identifier, actionDown, actionUp, name, target;
 
 - (id)init {
 	return [self initWithIdentifier: nil keyCombo: nil];
@@ -47,8 +47,12 @@
 	return keyCombo;
 }
 
-- (void)invoke {
-	[target performSelector:action withObject:self];
+- (void)invokeDown {
+	[target performSelector:actionDown withObject:self];
+}
+
+- (void)invokeUp {
+	[target performSelector:actionUp withObject:self];
 }
 
 - (void)dealloc {

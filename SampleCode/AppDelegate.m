@@ -16,12 +16,20 @@
 	[shortcutsController addShortcutFromDefaultsKey:@"JustSomeDefaultsKey"
 										withControl:recorderControl
 											 target:self
-										   selector:@selector(doSomething:)];
+									selectorForDown:@selector(doSomething:)
+											  andUp:@selector(doSomethingElse:)];
 }
 
 - (IBAction) doSomething:(id)sender {
+	/*
 	[NSApp activateIgnoringOtherApps:YES];
 	NSRunAlertPanelRelativeToWindow(@"You pressed it!", @"A hotkey was just pressed, thus bringing up this alert. Congrats!", @"OK", nil, nil, window);
+	 */
+	NSLog(@"Key down!");
+}
+
+- (IBAction) doSomethingElse:(id)sender {
+	NSLog(@"Key up!");
 }
 
 @end
