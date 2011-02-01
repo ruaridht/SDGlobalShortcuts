@@ -48,11 +48,13 @@
 }
 
 - (void)invokeDown {
-	[target performSelector:actionDown withObject:self];
+	if (actionDown)
+		[target performSelector:actionDown withObject:self];
 }
 
 - (void)invokeUp {
-	[target performSelector:actionUp withObject:self];
+	if (actionUp)
+		[target performSelector:actionUp withObject:self];
 }
 
 - (void)dealloc {

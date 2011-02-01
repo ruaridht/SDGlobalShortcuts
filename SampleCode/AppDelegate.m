@@ -13,11 +13,17 @@
 
 - (void) awakeFromNib {
 	SDGlobalShortcutsController *shortcutsController = [SDGlobalShortcutsController sharedShortcutsController];
+	/*
 	[shortcutsController addShortcutFromDefaultsKey:@"JustSomeDefaultsKey"
 										withControl:recorderControl
 											 target:self
 									selectorForDown:@selector(doSomething:)
 											  andUp:@selector(doSomethingElse:)];
+	*/
+	[shortcutsController addShortcutFromDefaultsKey:@"JustSomeDefaultsKey"
+										withControl:recorderControl
+											 target:self
+										   selector:@selector(doSomething:)];
 }
 
 - (IBAction) doSomething:(id)sender {
